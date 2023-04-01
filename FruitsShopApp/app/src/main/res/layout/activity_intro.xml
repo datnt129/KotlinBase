@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:fillViewport="true">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center">
+
+        <ImageView
+            android:id="@+id/imvIntroFruitsShadow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginBottom="-17dp"
+            app:layout_constraintBottom_toBottomOf="@+id/imvIntroFruits"
+            app:layout_constraintStart_toStartOf="parent"
+            app:srcCompat="@drawable/intro_fruits_shadow"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:id="@+id/imvIntroFruits"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_14sdp"
+            android:layout_marginTop="189dp"
+            android:layout_marginEnd="@dimen/_21sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/intro_fruits"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:id="@+id/tvIntroText"
+            android:layout_width="@dimen/_206sdp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="72.44dp"
+            android:text="@string/intro_text"
+            android:textAlignment="center"
+            android:textColor="@color/green_8"
+            android:textSize="30sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imvIntroFruits"
+            tools:ignore="TextSizeCheck" />
+
+        <Button
+            android:id="@+id/btnGetStarted"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="90dp"
+            android:layout_marginBottom="96dp"
+            android:text="@string/intro_get_started_text"
+            android:textAllCaps="false"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvIntroText"
+            tools:ignore="TextContrastCheck" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
