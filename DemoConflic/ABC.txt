@@ -1,0 +1,22 @@
+A
+B
+C
+D
+E
+F
+G
+H
+I
+K
+L
+M
+R
+<<<<<<< HEAD
+3
+=======
+2
+>>>>>>> d26faab (Change 2)
+23
+fda
+2345
+45
