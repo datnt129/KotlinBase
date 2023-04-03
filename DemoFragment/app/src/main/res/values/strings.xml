@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">DemoFragment</string>
+
+    <string name="text_tometo" translatable="false">Tomato</string>
+
+
+</resources>
