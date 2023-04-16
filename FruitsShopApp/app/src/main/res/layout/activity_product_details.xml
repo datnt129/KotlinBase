@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:fillViewport="true">
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProductDetailsActivity">
+
+    <ImageView
+        android:id="@+id/imvPDImage"
+        android:layout_width="match_parent"
+        android:layout_height="290dp"
+        android:paddingLeft="@dimen/_85sdp"
+        android:paddingRight="@dimen/_88sdp"
+        android:paddingTop="50dp"
+        android:paddingBottom="84dp"
+        android:background="#1AFB9082"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/product_tomato" />
+
+    <ImageView
+        android:id="@+id/imvPDBack"
+        android:layout_width="15dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="@dimen/_24sdp"
+        android:layout_marginTop="35dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/all_back_icon"
+        android:clickable="true"/>
+
+    <TextView
+        android:id="@+id/tvPDBackground"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="256dp"
+        android:background="@drawable/shape_product_details"
+        android:textColor="@color/green_8"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvPDname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_23sdp"
+        android:layout_marginTop="34dp"
+        android:text="Tomato"
+        android:textSize="20sp"
+        android:textColor="#D60013"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tvPDBackground" />
+
+    <TextView
+        android:id="@+id/tvPDPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_23sdp"
+        android:layout_marginTop="21dp"
+        android:text="$1.50 / kg"
+        android:textSize="14sp"
+        android:textColor="#A6000000"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvPDname" />
+
+    <TextView
+        android:id="@+id/tvPDdes"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="120dp"
+        android:layout_marginStart="@dimen/_23sdp"
+        android:layout_marginEnd="@dimen/_23sdp"
+        android:text="@string/tomato_des"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tvPDBackground" />
+
+    <TextView
+        android:id="@+id/tvRelatedItemText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="26dp"
+        android:text="Related items"
+        android:textColor="#2E6C00"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvPDdes" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvRelatedItem"
+        android:layout_width="0dp"
+        android:layout_height="86dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="@dimen/_23sdp"
+        android:orientation="horizontal"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvRelatedItemText" />
+
+    <Button
+        android:id="@+id/btnAddToCart"
+        android:layout_width="@dimen/_169sdp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="65dp"
+        android:layout_marginBottom="74dp"
+        android:text="Add To Cart"
+        android:textAllCaps="false"
+        android:textStyle="bold"
+        android:background="@drawable/shape_categories"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rvRelatedItem"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <TextView
+        android:id="@+id/tvAddPD"
+        android:layout_width="30dp"
+        android:layout_height="25dp"
+        android:text="+"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        android:background="@drawable/shape_product_details_plus"
+        app:layout_constraintTop_toTopOf="@id/tvPDCount"
+        app:layout_constraintEnd_toStartOf="@id/tvPDCount"
+        app:layout_constraintBottom_toBottomOf="@id/tvPDCount" />
+
+    <TextView
+        android:id="@+id/tvPDCount"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:text="1"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        android:background="@drawable/shape_product_details_total_order"
+        app:layout_constraintBottom_toBottomOf="@+id/tvMinusPD"
+        app:layout_constraintEnd_toStartOf="@+id/tvMinusPD"
+        app:layout_constraintTop_toTopOf="@+id/tvMinusPD" />
+
+    <TextView
+        android:id="@+id/tvMinusPD"
+        android:layout_width="30dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="34dp"
+        android:layout_marginEnd="@dimen/_24sdp"
+        android:text="-"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        android:background="@drawable/shape_product_details_minus"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tvPDBackground" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

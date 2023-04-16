@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ListProductActivity">
+
+        <ImageView
+            android:id="@+id/imvBack"
+            android:layout_width="15dp"
+            android:layout_height="24dp"
+            android:layout_marginStart="@dimen/_24sdp"
+            android:layout_marginTop="35dp"
+            android:clickable="true"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/all_back_icon" />
+
+        <ImageView
+            android:id="@+id/imvShoppingCart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="35dp"
+            android:layout_marginEnd="@dimen/_21sdp"
+            android:clickable="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/home_shopping_cart" />
+
+        <TextView
+            android:id="@+id/tvCategoriesText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_26sdp"
+            android:layout_marginTop="96dp"
+            android:text="Categories"
+            android:textColor="@color/green_8"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="@dimen/_24sdp"
+            android:layout_marginTop="41dp"
+            android:layout_marginEnd="@dimen/_7sdp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toTopOf="@+id/llNavBar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvCategoriesText">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvListProducts"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+                app:spanCount="2" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llNavBar"
+            android:layout_width="0dp"
+            android:layout_height="86dp"
+            android:background="@drawable/shape_navbar"
+            android:outlineProvider="background"
+            android:weightSum="4"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <ImageView
+                android:id="@+id/imvNavBarHome"
+                android:layout_width="0dp"
+                android:layout_height="86dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:padding="32dp"
+                app:srcCompat="@drawable/all_navbar_home" />
+
+            <ImageView
+                android:id="@+id/imvNavBarLike"
+                android:layout_width="0dp"
+                android:layout_height="86dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:padding="32dp"
+                app:srcCompat="@drawable/all_navbar_like" />
+
+            <ImageView
+                android:id="@+id/imvNavBarNotif"
+                android:layout_width="0dp"
+                android:layout_height="86dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:padding="32dp"
+                app:srcCompat="@drawable/all_navbar_notif" />
+
+            <ImageView
+                android:id="@+id/imvNavBarUser"
+                android:layout_width="0dp"
+                android:layout_height="86dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:padding="32dp"
+                app:srcCompat="@drawable/all_navbar_user_account" />
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

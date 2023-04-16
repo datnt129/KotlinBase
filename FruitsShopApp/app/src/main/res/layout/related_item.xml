@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="83dp"
+    android:layout_height="83dp"
+    android:layout_marginEnd="21dp">
+
+    <ImageView
+        android:id="@+id/imvRelatedImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingStart="24dp"
+        android:paddingTop="2dp"
+        android:paddingEnd="24dp"
+        android:paddingBottom="40dp"
+        android:background="@drawable/shape_top_products"
+        android:backgroundTint="#EEE0F8"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/products_grapes" />
+
+    <TextView
+        android:id="@+id/tvRelatedTextBackground"
+        android:layout_width="77dp"
+        android:layout_height="25dp"
+        android:layout_marginBottom="2dp"
+        android:background="@drawable/shape_top_products"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tvRelatedName"
+        android:layout_width="41dp"
+        android:layout_height="13dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:text="Grapes"
+        android:textSize="11sp"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="@id/tvRelatedTextBackground"
+        app:layout_constraintTop_toTopOf="@+id/tvRelatedTextBackground" />
+
+    <TextView
+        android:id="@+id/tvRelatedPrice"
+        android:layout_width="24dp"
+        android:layout_height="13dp"
+        android:layout_marginEnd="5dp"
+        android:text="$1.20"
+        android:textSize="10sp"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/tvRelatedTextBackground"
+        app:layout_constraintTop_toTopOf="@id/tvRelatedName"
+        app:layout_constraintBottom_toBottomOf="@id/tvRelatedName"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

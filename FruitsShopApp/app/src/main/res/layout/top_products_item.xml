@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="150dp"
+    android:layout_height="209dp"
+    android:layout_marginBottom="34dp"
+    android:layout_marginEnd="16dp">
+
+    <TextView
+        android:id="@+id/tvTopProductbackground"
+        android:layout_width="150dp"
+        android:layout_height="159dp"
+        android:background="@drawable/shape_top_products"
+        android:backgroundTint="@color/green_8"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tvTopProductPrice"
+        android:layout_width="109dp"
+        android:layout_height="35dp"
+        android:text="$2.50"
+        android:textSize="18sp"
+        android:textColor="#162019"
+        android:gravity="center_vertical"
+        android:paddingStart="22dp"
+        android:background="@drawable/shape_top_products_price"
+        android:backgroundTint="@color/green_10"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imvTopProductLike"
+        android:layout_width="41dp"
+        android:layout_height="35dp"
+        android:background="@drawable/shape_top_products_btn"
+        android:backgroundTint="@color/teal_700"
+        android:clickable="true"
+        android:padding="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tvTopProductPrice"
+        app:srcCompat="@drawable/all_navbar_like"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+    <ImageView
+        android:id="@+id/imvTopProductImage"
+        android:layout_width="136dp"
+        android:layout_height="136dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/products_grapes" />
+
+    <TextView
+        android:id="@+id/tvTopProductName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="16dp"
+        android:text="Grapes"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/tvTopProductPrice"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

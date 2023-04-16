@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">FruitsShopApp</string>
+    <string name="intro_text">Shop Your Daily Necessary</string>
+    <string name="intro_get_started_text">Get Started</string>
+
+<!--    product description-->
+    <string name="tomato_des">Tometo is It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution.</string>
+    <string name="pumpkin_des">Pupmp is It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution.</string>
+    <string name="brinjal_des">Brinjal is It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution.</string>
+    <string name="cauliflower_des">Cauliflower is It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution.</string>
+    <string name="something1_des">Something1 is It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution.</string>
+    <string name="something2_des">Something2 is It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution.</string>
+</resources>
