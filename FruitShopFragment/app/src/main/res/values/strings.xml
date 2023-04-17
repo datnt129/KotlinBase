@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">FruitShop</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="intro_text">Shop your Daily Necessary</string>
+    <string name="get_started_button">Get Started</string>
+    <string name="categories_text">Categories</string>
+    <string name="top_products_text">Top Products</string>
+    <string name="see_all_text">See All</string>
+</resources>
